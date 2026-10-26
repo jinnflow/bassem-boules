@@ -1,0 +1,133 @@
+# Pages CMS editor (https://pagescms.org)
+# Bassem logs in at app.pagescms.org with his GitHub account and edits everything below
+# through simple forms. Every save updates the live website within about a minute.
+
+media:
+  input: assets/uploads
+  output: assets/uploads
+
+content:
+  - name: site
+    label: My website
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: nameArabic
+        label: Name in Arabic
+        type: string
+      - name: tagline
+        label: Small line above the name
+        type: string
+      - name: location
+        label: City
+        type: string
+      - name: heroLine
+        label: Big sentence under the name
+        type: string
+      - name: heroNote
+        label: Hint under the drawing
+        type: string
+
+      - name: about
+        label: About me
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text (leave an empty line between paragraphs), type: text }
+          - { name: portrait, label: My photo, type: image }
+          - name: facts
+            label: Short facts
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Label, type: string }
+              - { name: value, label: Fact, type: string }
+
+      - name: works
+        label: Artworks (the first ones show first)
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string, required: true }
+          - { name: image, label: Picture, type: image, required: true }
+          - { name: year, label: Year, type: string }
+          - { name: medium, label: Medium (e.g. Charcoal on toned paper), type: string }
+          - { name: size, label: Size (e.g. 50 × 70 cm), type: string }
+          - name: status
+            label: Status
+            type: select
+            options:
+              values: [Available, Commissioned, Private collection, Sold, Sold out, Not for sale]
+          - { name: price, label: Price (optional), type: string }
+          - { name: link, label: Link to buy or see more (optional), type: string }
+          - { name: story, label: The story behind it, type: text }
+
+      - name: teaching
+        label: Workshops & teaching
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: image, label: Photo, type: image }
+          - { name: imageCaption, label: Photo caption, type: string }
+          - { name: cta, label: Link text at the end, type: string }
+          - name: sessions
+            label: Workshops (newest first)
+            type: object
+            list: true
+            fields:
+              - { name: date, label: Date (e.g. Oct 2026), type: string }
+              - { name: title, label: Workshop name, type: string }
+              - { name: place, label: Where, type: string }
+
+      - name: press
+        label: Press quotes
+        type: object
+        list: true
+        fields:
+          - { name: quote, label: Quote, type: text }
+          - { name: source, label: Who said it, type: string }
+          - { name: link, label: Link to article, type: string }
+
+      - name: exhibitions
+        label: Exhibitions
+        type: object
+        list: true
+        fields:
+          - { name: year, label: Year, type: string }
+          - { name: title, label: Exhibition, type: string }
+          - { name: place, label: Where, type: string }
+
+      - name: guide
+        label: Free guide (email sign-up)
+        type: object
+        fields:
+          - { name: eyebrow, label: Small label, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: button, label: Button text, type: string }
+          - { name: success, label: Thank-you message, type: text }
+          - { name: downloadUrl, label: Link to the guide, type: string }
+          - { name: formEndpoint, label: "Email service address (from Formspree, ask your helper)", type: string }
+
+      - name: commission
+        label: Commissions
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: steps, label: Steps, type: string, list: true }
+
+      - name: contact
+        label: Contact & links
+        type: object
+        fields:
+          - { name: email, label: Email, type: string }
+          - { name: instagram, label: Instagram link, type: string }
+          - { name: instagramHandle, label: Instagram name, type: string }
+          - { name: shop, label: Shop link, type: string }
+          - { name: tashkeel, label: Tashkeel profile link, type: string }

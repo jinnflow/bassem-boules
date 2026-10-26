@@ -1,0 +1,160 @@
+{
+  "name": "Bassem Boules",
+  "nameArabic": "باسم بولس",
+  "tagline": "Portrait artist & illustrator",
+  "location": "Dubai, UAE",
+  "heroLine": "Old-Master realism, drawn for the city of the future.",
+  "heroNote": "Move across the drawing to finish it.",
+  "about": {
+    "title": "Between the past and the future",
+    "text": "I'm an Egyptian artist and graphic designer living in Dubai. I trained at the Faculty of Fine Arts, Alexandria University, and I have never stopped studying the Old Masters: how they built a face out of light, how a single line can carry weight and warmth.\n\nI move between charcoal and paper, digital painting and the risograph, and I teach all three. Most of my work starts the same way, with a careful drawing and a question about where tradition meets the life we live now.",
+    "portrait": "assets/img/bassem.jpg",
+    "facts": [
+      {
+        "label": "Studied",
+        "value": "Fine Arts, Alexandria University"
+      },
+      {
+        "label": "Based",
+        "value": "Dubai, resident artist at Tashkeel"
+      },
+      {
+        "label": "Works in",
+        "value": "Charcoal, soft pastel, ink, digital painting, risograph"
+      },
+      {
+        "label": "Community",
+        "value": "48.7K following the process on Instagram"
+      }
+    ]
+  },
+  "works": [
+    {
+      "title": "Between the Past and Future",
+      "year": "2024",
+      "medium": "Digital painting, printed",
+      "size": "50 × 70 cm",
+      "image": "assets/works/between-the-past-and-future.jpg",
+      "status": "Sold",
+      "price": "",
+      "link": "https://shop.tashkeel.org/products/between-the-past-and-future-by-bassem-boules",
+      "story": "A woman in a red kandora and gold-trimmed burqa reaches for an old lantern. Behind her, the Dubai skyline is drawn only in outline, as if it hasn't been finished yet. Made at Tashkeel in 2024."
+    },
+    {
+      "title": "Fairouz",
+      "year": "2026",
+      "medium": "Risograph print, two colours. With Ibrahim Zaki",
+      "size": "29.7 × 42 cm",
+      "image": "assets/works/fairouz.jpg",
+      "status": "Available",
+      "price": "From AED 790",
+      "link": "https://shop.tashkeel.org/products/fairouz-2026",
+      "story": "A portrait of the singer built from thousands of engraved lines in riso blue, overprinted with Ibrahim Zaki's red Arabic lettering. Shown in Khali Balak Men RISO at Tashkeel, 2026."
+    },
+    {
+      "title": "A Day in Dubai",
+      "year": "2026",
+      "medium": "Risograph print, up to five colours",
+      "size": "42 × 29.7 cm",
+      "image": "assets/works/a-day-in-dubai.jpg",
+      "status": "Available",
+      "price": "AED 735",
+      "link": "https://shop.tashkeel.org/products/a-day-in-dubai-2026",
+      "story": "The Museum of the Future, Dubai Frame, Burj Al Arab and Burj Khalifa in one afternoon, with a skateboarder and a very curious cat. Each colour is a separate pass through the riso machine; the whole print took about two hours."
+    },
+    {
+      "title": "Galactic Adventure",
+      "year": "",
+      "medium": "Digital illustration, sketchbook cover",
+      "size": "A5 sketchbook",
+      "image": "assets/works/galactic-adventure.jpg",
+      "status": "Sold out",
+      "price": "",
+      "link": "https://shop.tashkeel.org/products/galactic-adventure",
+      "story": "An astronaut and two children look out of a plane window at a ship made of Arabic calligraphy. Designed as a sketchbook cover for the Tashkeel shop."
+    }
+  ],
+  "teaching": {
+    "title": "The workshop table",
+    "text": "I've led drawing, portrait, pastel and risograph workshops at Tashkeel since 2022, for children, families and adults. The method is the same at every level: look longer, measure honestly, and let light and shadow do the work.",
+    "image": "assets/img/charcoal-process.jpg",
+    "imageCaption": "Charcoal, graphite and white pastel on toned paper, from the Realistic Portrait Drawing workshop.",
+    "sessions": [
+      {
+        "date": "Oct 2026",
+        "title": "Riso Poster Lab",
+        "place": "Tashkeel"
+      },
+      {
+        "date": "2026",
+        "title": "Art of Elevation: 8 sessions of charcoal, soft pastel & watercolour",
+        "place": "Tashkeel × Sharjah Capability Development"
+      },
+      {
+        "date": "2025",
+        "title": "Summer Camp workshops",
+        "place": "Tashkeel Makerspace, Alserkal Avenue"
+      },
+      {
+        "date": "2025",
+        "title": "Stencil lettering hoodie workshop",
+        "place": "Sikka Art & Design Festival"
+      },
+      {
+        "date": "May 2023",
+        "title": "Realistic Portrait Drawing in Charcoal (sold out)",
+        "place": "Al Safa Art & Design Library"
+      },
+      {
+        "date": "2022",
+        "title": "Drawing 101, a five-week course for ages 8–12",
+        "place": "Tashkeel"
+      }
+    ],
+    "cta": "Ask about the next workshop or a private lesson"
+  },
+  "press": [
+    {
+      "quote": "It took about two hours to print. With experience, it becomes easier to deal with the printer. But still, there are always surprises.",
+      "source": "The National, on A Day in Dubai, August 2026",
+      "link": "https://www.thenationalnews.com/arts-culture/art-design/2026/08/05/group-exhibition-at-tashkeel-celebrates-charm-and-quirks-of-risograph/"
+    }
+  ],
+  "exhibitions": [
+    {
+      "year": "2026",
+      "title": "Khali Balak Men RISO, group exhibition",
+      "place": "Tashkeel, Dubai"
+    },
+    {
+      "year": "2024",
+      "title": "Made in Tashkeel",
+      "place": "Tashkeel, Dubai"
+    }
+  ],
+  "guide": {
+    "eyebrow": "Free guide",
+    "title": "The Old Masters' Portrait Notes",
+    "text": "Five short lessons from my workshop table: proportion, the planes of the face, value, edges and the last highlight. Leave your email and I'll send it, along with a note when new workshops open.",
+    "button": "Send me the guide",
+    "success": "Thank you. Your guide is ready below, and I'll write when the next workshop opens.",
+    "downloadUrl": "guide.html",
+    "formEndpoint": ""
+  },
+  "commission": {
+    "title": "Commission a portrait",
+    "text": "Private portraits in charcoal, pastel or digital paint, from a photograph you love. Tell me who it's for, the size you have in mind and when you need it.",
+    "steps": [
+      "Send a photo, the size and your deadline",
+      "I send a quote and a first sketch to approve",
+      "I finish the portrait and deliver it, ready to frame"
+    ]
+  },
+  "contact": {
+    "email": "bassemboules23@gmail.com",
+    "instagram": "https://www.instagram.com/bassem_paul_art/",
+    "instagramHandle": "@bassem_paul_art",
+    "shop": "https://shop.tashkeel.org/collections/bassem-boules",
+    "tashkeel": "https://tashkeel.org/artists/bassem-boules"
+  }
+}
