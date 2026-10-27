@@ -10,17 +10,21 @@ Portfolio, lead magnet and commissions site for [Bassem Boules](https://tashkeel
 | `content/site.json` | **All the words and artworks.** The page renders from this file. |
 | `.pages.yml` | Form-based editor config for [Pages CMS](https://pagescms.org) (free). |
 | `guide.html` | The lead magnet: *The Old Masters' Portrait Notes*, a 5-lesson guide. |
-| `assets/works/`, `assets/img/` | Optimised artwork images. `assets/img/hero-sketch.jpg` is a pencil version of the hero painting used by the reveal. |
+| `assets/works/`, `assets/img/` | Optimised artwork and studio images (sources: his public Instagram posts and the Tashkeel shop). |
 | `assets/uploads/` | Where Pages CMS stores images Bassem uploads. |
 | `HOW-TO-EDIT.md` | Plain-language editing guide for Bassem (English + Egyptian Arabic). |
 
-## Interactions
+## Design
 
-- **Hero reveal**: the painting *Between the Past and Future* starts as a graphite drawing. The cursor (or a finger dragged sideways) paints the finished work in with a charcoal-textured brush; it slowly fades back to the drawing, and an automatic "hand" redraws it now and then. A button shows the full painting for keyboard and touch users.
-- **Riso name**: the name is printed in three layers (Riso Blue, Bright Red, key black) that drift slightly out of register with the cursor.
-- **Loupe**: hovering an artwork shows a 2.6× magnifier to look at the line work.
-- **Viewer**: clicking a work opens its story, dimensions, availability and a link to the Tashkeel shop.
-- All motion respects `prefers-reduced-motion`; light and dark themes are both designed (toned paper / charcoal paper).
+A dark gallery lit by a single lamp, taken from the chiaroscuro of the Old Masters he studies (and the lantern in his own *Between the Past and Future*).
+
+- **Hero lamp**: his charcoal *Eye Study I* sits almost black; the cursor (or a finger) is a warm lamp that lights the drawing, with a slight flame flicker. When nobody moves it, the light drifts across the eye on its own.
+- **Gallery**: 15 works pulled from his Instagram and the Tashkeel shop, with filters by medium. Hovering one dims the rest; clicking opens a full-screen viewer with the story, keyboard arrows and swipe.
+- **Close-up**: a full-width detail of his 2024 eye study with his own caption, moving slowly with scroll.
+- **Workshops**: the one light (bone-white) room, with teaching photos and the workshop list.
+- **Free guide** and **Commission** close the page. Motion respects `prefers-reduced-motion`.
+
+Type: Cormorant Garamond (display), Hanken Grotesk (text), Amiri (Arabic name).
 
 ## Go live (free, about 15 minutes)
 
@@ -43,7 +47,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 ## Content to confirm with Bassem
 
 - Arabic spelling of his name (`باسم بولس`).
-- Year of the *Galactic Adventure* sketchbook (left blank).
+- Titles for Instagram pieces were written from his captions (e.g. *Eye Study I*, *Tear*, *Teaching Study*); he may prefer his own titles, and should confirm *The Pantocrator* medium.
+- Images from Instagram are 640–1440 px; higher-resolution originals from him will look sharper.
 - Commission steps and wording (written as a sensible default).
 - The guide text in `guide.html` is a draft in his teaching voice, based on his workshop descriptions; he should read and adjust it.
-- More works: the site shows the four pieces public on Tashkeel. His Instagram (48.7K followers, 860+ posts) has much more: charcoal, soft-pastel and ink portraits should be added through the CMS.

@@ -7,21 +7,19 @@
 <meta name="description" content="The Old Masters' Portrait Notes: five short lessons on drawing a living face, by Bassem Boules.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=DM+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Hanken+Grotesk:wght@400;500&display=swap">
 <style>
-  :root { --paper:#dedad2; --paper-2:#e9e6df; --ink:#1f1e1b; --soft:#5d5a53; --rule:#b9b3a8; --blue:#0078bf; --red:#e8413c;
-    --f-d:"Bodoni Moda",Georgia,serif; --f-b:"Archivo","Helvetica Neue",Arial,sans-serif; --f-m:"DM Mono",ui-monospace,Menlo,monospace; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper:#1d1c1a; --paper-2:#262522; --ink:#ece7dd; --soft:#a49e93; --rule:#45423c; --blue:#3f9fe0; --red:#ff5d52; color-scheme:dark; } }
-  :root[data-theme="dark"] { --paper:#1d1c1a; --paper-2:#262522; --ink:#ece7dd; --soft:#a49e93; --rule:#45423c; --blue:#3f9fe0; --red:#ff5d52; color-scheme:dark; }
+  :root { --paper:#0d0c0b; --paper-2:#161513; --ink:#ece6dc; --soft:#8f887d; --rule:rgba(236,230,220,.14); --blue:#e0a458; --red:#e0a458;
+    --f-d:"Cormorant Garamond",Garamond,serif; --f-b:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif; --f-m:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif; color-scheme:dark; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--paper); color:var(--ink); font:400 1.05rem/1.65 var(--f-b); }
   .wrap { max-width:760px; margin-inline:auto; padding-left:max(20px, env(safe-area-inset-left,0px)); padding-right:max(20px, env(safe-area-inset-right,0px)); padding-block:56px 80px; }
-  .mono { font-family:var(--f-m); font-size:.82rem; letter-spacing:.04em; color:var(--soft); }
-  h1 { font-family:var(--f-d); font-weight:400; font-size:clamp(2.4rem,1.6rem + 4vw,4.2rem); line-height:1; margin:12px 0 20px; letter-spacing:-.02em; text-wrap:balance; }
+  .mono { font-family:var(--f-m); font-size:.74rem; letter-spacing:.16em; text-transform:uppercase; color:var(--soft); }
+  h1 { font-family:var(--f-d); font-weight:300; font-size:clamp(2.4rem,1.6rem + 4vw,4.2rem); line-height:1; margin:12px 0 20px; letter-spacing:-.02em; text-wrap:balance; }
   h1 em { color:var(--blue); }
   .intro { font-size:1.2rem; max-width:52ch; }
-  section { border-top:1px solid var(--ink); padding-top:22px; margin-top:52px; display:grid; gap:10px; }
-  h2 { font-family:var(--f-d); font-weight:400; font-size:clamp(1.6rem,1.3rem + 1.2vw,2.2rem); line-height:1.1; margin:0; }
+  section { border-top:1px solid var(--rule); padding-top:22px; margin-top:52px; display:grid; gap:10px; }
+  h2 { font-family:var(--f-d); font-weight:300; font-size:clamp(1.6rem,1.3rem + 1.2vw,2.2rem); line-height:1.1; margin:0; }
   h2 span { font-style:italic; color:var(--red); margin-right:.3em; }
   p { margin:0 0 .6em; max-width:62ch; }
   .try { background:var(--paper-2); border-left:3px solid var(--blue); padding:14px 18px; margin-top:6px; }

@@ -20,51 +20,59 @@ content:
         label: Name in Arabic
         type: string
       - name: tagline
-        label: Small line above the name
+        label: Small line above the big title
         type: string
-      - name: location
-        label: City
-        type: string
-      - name: heroLine
-        label: Big sentence under the name
-        type: string
+      - name: heroTitle
+        label: Big title on the first screen (new line = line break)
+        type: text
       - name: heroNote
-        label: Hint under the drawing
+        label: Hint next to the light
         type: string
-
-      - name: about
-        label: About me
+      - name: intro
+        label: Short introduction
+        type: text
+      - name: portrait
+        label: My photo
+        type: image
+      - name: stats
+        label: Numbers
         type: object
+        list: true
         fields:
-          - { name: title, label: Title, type: string }
-          - { name: text, label: Text (leave an empty line between paragraphs), type: text }
-          - { name: portrait, label: My photo, type: image }
-          - name: facts
-            label: Short facts
-            type: object
-            list: true
-            fields:
-              - { name: label, label: Label, type: string }
-              - { name: value, label: Fact, type: string }
+          - { name: value, label: Number, type: string }
+          - { name: label, label: What it means, type: string }
+      - name: categories
+        label: Gallery filters (mediums)
+        type: string
+        list: true
 
       - name: works
-        label: Artworks (the first ones show first)
+        label: Artworks (drag to reorder)
         type: object
         list: true
         fields:
           - { name: title, label: Title, type: string, required: true }
           - { name: image, label: Picture, type: image, required: true }
           - { name: year, label: Year, type: string }
-          - { name: medium, label: Medium (e.g. Charcoal on toned paper), type: string }
+          - { name: category, label: "Filter (must match one of the gallery filters)", type: string }
+          - { name: medium, label: Medium (e.g. Charcoal on paper), type: string }
           - { name: size, label: Size (e.g. 50 × 70 cm), type: string }
           - name: status
             label: Status
             type: select
             options:
-              values: [Available, Commissioned, Private collection, Sold, Sold out, Not for sale]
+              values: ["", Available, Commissioned, Private collection, Sold, Sold out, Not for sale]
           - { name: price, label: Price (optional), type: string }
-          - { name: link, label: Link to buy or see more (optional), type: string }
+          - { name: link, label: Link (shop page or Instagram post), type: string }
           - { name: story, label: The story behind it, type: text }
+
+      - name: detail
+        label: Big close-up between gallery and workshops
+        type: object
+        fields:
+          - { name: image, label: Picture, type: image }
+          - { name: quote, label: Quote, type: string }
+          - { name: source, label: Under the quote, type: string }
 
       - name: teaching
         label: Workshops & teaching
@@ -72,8 +80,13 @@ content:
         fields:
           - { name: title, label: Title, type: string }
           - { name: text, label: Text, type: text }
-          - { name: image, label: Photo, type: image }
-          - { name: imageCaption, label: Photo caption, type: string }
+          - name: images
+            label: Workshop photos (three look best)
+            type: object
+            list: true
+            fields:
+              - { name: src, label: Photo, type: image }
+              - { name: caption, label: Caption, type: string }
           - { name: cta, label: Link text at the end, type: string }
           - name: sessions
             label: Workshops (newest first)

@@ -1,84 +1,235 @@
 {
   "name": "Bassem Boules",
   "nameArabic": "باسم بولس",
-  "tagline": "Portrait artist & illustrator",
-  "location": "Dubai, UAE",
-  "heroLine": "Old-Master realism, drawn for the city of the future.",
-  "heroNote": "Move across the drawing to finish it.",
-  "about": {
-    "title": "Between the past and the future",
-    "text": "I'm an Egyptian artist and graphic designer living in Dubai. I trained at the Faculty of Fine Arts, Alexandria University, and I have never stopped studying the Old Masters: how they built a face out of light, how a single line can carry weight and warmth.\n\nI move between charcoal and paper, digital painting and the risograph, and I teach all three. Most of my work starts the same way, with a careful drawing and a question about where tradition meets the life we live now.",
-    "portrait": "assets/img/bassem.jpg",
-    "facts": [
-      {
-        "label": "Studied",
-        "value": "Fine Arts, Alexandria University"
-      },
-      {
-        "label": "Based",
-        "value": "Dubai, resident artist at Tashkeel"
-      },
-      {
-        "label": "Works in",
-        "value": "Charcoal, soft pastel, ink, digital painting, risograph"
-      },
-      {
-        "label": "Community",
-        "value": "48.7K following the process on Instagram"
-      }
-    ]
-  },
+  "tagline": "Portrait artist · Dubai",
+  "heroTitle": "Portraits drawn\nout of the dark.",
+  "heroNote": "Move your light across the drawing",
+  "intro": "Egyptian artist and illustrator, trained in the Faculty of Fine Arts at Alexandria University and working in Dubai. I draw the way the Old Masters taught: slowly, from light and shadow, until a face starts looking back.",
+  "portrait": "assets/img/bassem.jpg",
+  "stats": [
+    {
+      "value": "48.6K",
+      "label": "people follow the process on Instagram"
+    },
+    {
+      "value": "26",
+      "label": "riso workshops led at Tashkeel in one year"
+    },
+    {
+      "value": "Since 2022",
+      "label": "teaching drawing and print at Tashkeel"
+    }
+  ],
+  "categories": [
+    "Charcoal & pencil",
+    "Digital painting",
+    "Pastel & paint",
+    "Print & illustration"
+  ],
   "works": [
+    {
+      "title": "Eye Study I",
+      "year": "2023",
+      "category": "Charcoal & pencil",
+      "medium": "Charcoal on paper",
+      "size": "",
+      "image": "assets/works/charcoal-eye-i.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/p/CvFVdv1L5F5/",
+      "story": "Charcoal makes the eye come alive. One of a pair of studies built from soft charcoal, a blending stump and the white of the paper."
+    },
+    {
+      "title": "Idris Elba",
+      "year": "2023",
+      "category": "Digital painting",
+      "medium": "Digital painting, Procreate",
+      "size": "",
+      "image": "assets/works/idris-elba.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/p/CqA61TnDPF4/",
+      "story": "Painted with a single oil flat brush with thick bristles, keeping every stroke visible in the beard and skin."
+    },
+    {
+      "title": "Wdn Al Ota",
+      "year": "2023",
+      "category": "Print & illustration",
+      "medium": "Digital illustration",
+      "size": "",
+      "image": "assets/works/wdn-al-ota.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/p/CsoiI6tP4tq/",
+      "story": "“The cat's ear”: the Egyptian nickname for molokhia leaves, because of their shape. A kitchen in Egypt, a bowl of soup and a cat who knows exactly what it wants."
+    },
+    {
+      "title": "Tear",
+      "year": "2020",
+      "category": "Digital painting",
+      "medium": "Digital painting",
+      "size": "",
+      "image": "assets/works/tear.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/p/CBBjHgbHzeW/",
+      "story": "A study of a single eye: wet lashes, a green-grey iris and one tear leaving a trail across the skin."
+    },
     {
       "title": "Between the Past and Future",
       "year": "2024",
+      "category": "Print & illustration",
       "medium": "Digital painting, printed",
       "size": "50 × 70 cm",
       "image": "assets/works/between-the-past-and-future.jpg",
       "status": "Sold",
       "price": "",
       "link": "https://shop.tashkeel.org/products/between-the-past-and-future-by-bassem-boules",
-      "story": "A woman in a red kandora and gold-trimmed burqa reaches for an old lantern. Behind her, the Dubai skyline is drawn only in outline, as if it hasn't been finished yet. Made at Tashkeel in 2024."
+      "story": "A woman in a red kandora and gold-trimmed burqa reaches for an old lantern while the Dubai skyline waits, half drawn, behind her. Made at Tashkeel."
+    },
+    {
+      "title": "Eye Study II",
+      "year": "2023",
+      "category": "Charcoal & pencil",
+      "medium": "Charcoal on paper",
+      "size": "",
+      "image": "assets/works/charcoal-eye-ii.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/p/CvFVdv1L5F5/",
+      "story": "The companion study: lashes drawn one by one, and the window light reflected in the iris."
+    },
+    {
+      "title": "Classic Soft Pastel Portrait",
+      "year": "2025",
+      "category": "Pastel & paint",
+      "medium": "Soft pastel",
+      "size": "",
+      "image": "assets/works/soft-pastel-portrait.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/reel/DRKr81hkwIa/",
+      "story": "A large portrait built up by hand in layers of soft pastel."
     },
     {
       "title": "Fairouz",
       "year": "2026",
-      "medium": "Risograph print, two colours. With Ibrahim Zaki",
+      "category": "Print & illustration",
+      "medium": "Risograph print, with Ibrahim Zaki",
       "size": "29.7 × 42 cm",
       "image": "assets/works/fairouz.jpg",
       "status": "Available",
       "price": "From AED 790",
       "link": "https://shop.tashkeel.org/products/fairouz-2026",
-      "story": "A portrait of the singer built from thousands of engraved lines in riso blue, overprinted with Ibrahim Zaki's red Arabic lettering. Shown in Khali Balak Men RISO at Tashkeel, 2026."
+      "story": "The singer drawn in thousands of engraved lines of riso blue, overprinted with Ibrahim Zaki's red Arabic lettering. Shown in Khali Balak Men RISO at Tashkeel."
+    },
+    {
+      "title": "Eye Study",
+      "year": "2024",
+      "category": "Digital painting",
+      "medium": "Digital painting, Procreate",
+      "size": "",
+      "image": "assets/works/eye-study-2024.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/reel/C-x_ir_SDB6/",
+      "story": "Each wrinkle and texture tells a story."
+    },
+    {
+      "title": "Eight Hours of Charcoal",
+      "year": "2023",
+      "category": "Charcoal & pencil",
+      "medium": "Charcoal and white pencil",
+      "size": "",
+      "image": "assets/works/charcoal-cat.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/reel/Cu7NnrYpFqO/",
+      "story": "A cat in eight hours of charcoal, finished fur by fur with a white pencil."
+    },
+    {
+      "title": "Mona Zaki",
+      "year": "2021",
+      "category": "Digital painting",
+      "medium": "Digital painting",
+      "size": "",
+      "image": "assets/works/mona-zaki.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/p/CPV_Y3dlt83/",
+      "story": "A portrait of the Egyptian actress, painted in four and a half hours."
     },
     {
       "title": "A Day in Dubai",
       "year": "2026",
-      "medium": "Risograph print, up to five colours",
+      "category": "Print & illustration",
+      "medium": "Risograph print, five colours",
       "size": "42 × 29.7 cm",
       "image": "assets/works/a-day-in-dubai.jpg",
       "status": "Available",
       "price": "AED 735",
       "link": "https://shop.tashkeel.org/products/a-day-in-dubai-2026",
-      "story": "The Museum of the Future, Dubai Frame, Burj Al Arab and Burj Khalifa in one afternoon, with a skateboarder and a very curious cat. Each colour is a separate pass through the riso machine; the whole print took about two hours."
+      "story": "The Museum of the Future, Dubai Frame, Burj Al Arab and Burj Khalifa in one afternoon. Each colour is a separate pass through the riso machine; the print took about two hours."
     },
     {
-      "title": "Galactic Adventure",
-      "year": "",
-      "medium": "Digital illustration, sketchbook cover",
-      "size": "A5 sketchbook",
-      "image": "assets/works/galactic-adventure.jpg",
-      "status": "Sold out",
+      "title": "Pencil Study",
+      "year": "2019",
+      "category": "Charcoal & pencil",
+      "medium": "Mechanical pencil, charcoal and soft powder",
+      "size": "20 × 30 cm",
+      "image": "assets/works/pencil-eye.jpg",
+      "status": "",
       "price": "",
-      "link": "https://shop.tashkeel.org/products/galactic-adventure",
-      "story": "An astronaut and two children look out of a plane window at a ship made of Arabic calligraphy. Designed as a sketchbook cover for the Tashkeel shop."
+      "link": "https://www.instagram.com/p/B2rezwpnMNF/",
+      "story": "Drawn with a fine mechanical pencil over a charcoal and powder base."
+    },
+    {
+      "title": "Teaching Study",
+      "year": "2025",
+      "category": "Digital painting",
+      "medium": "Digital painting, Procreate",
+      "size": "",
+      "image": "assets/works/teaching-study.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/reel/DFQHKfOP8TP/",
+      "story": "Painted live for a class, to show how the eye is built from shapes of warm and cool colour."
+    },
+    {
+      "title": "The Pantocrator",
+      "year": "2019",
+      "category": "Pastel & paint",
+      "medium": "Coptic icon",
+      "size": "",
+      "image": "assets/works/pantocrator.jpg",
+      "status": "",
+      "price": "",
+      "link": "https://www.instagram.com/p/B1lXO2OHQA8/",
+      "story": "Christ as the Alpha and the Omega, in the tradition of Coptic icon painting."
     }
   ],
+  "detail": {
+    "image": "assets/works/eye-study-2024.jpg",
+    "quote": "Each wrinkle and texture tells a story.",
+    "source": "Bassem, on his 2024 eye study"
+  },
   "teaching": {
     "title": "The workshop table",
-    "text": "I've led drawing, portrait, pastel and risograph workshops at Tashkeel since 2022, for children, families and adults. The method is the same at every level: look longer, measure honestly, and let light and shadow do the work.",
-    "image": "assets/img/charcoal-process.jpg",
-    "imageCaption": "Charcoal, graphite and white pastel on toned paper, from the Realistic Portrait Drawing workshop.",
+    "text": "I teach drawing, portraiture, pastel and risograph at Tashkeel in Dubai, for children, families and adults. The method is the same at every level: look longer, measure honestly, and let light and shadow do the work.",
+    "images": [
+      {
+        "src": "assets/img/studio-riso.jpg",
+        "caption": "Risograph printing at the Tashkeel Makerspace"
+      },
+      {
+        "src": "assets/img/studio-elevation.jpg",
+        "caption": "Art of Elevation, with Sharjah Capability Development"
+      },
+      {
+        "src": "assets/img/studio-museum.jpg",
+        "caption": "Soft pastel workshop at the Museum of the Future"
+      }
+    ],
     "sessions": [
       {
         "date": "Oct 2026",
@@ -86,22 +237,27 @@
         "place": "Tashkeel"
       },
       {
+        "date": "Oct 2026",
+        "title": "Digital portraits in Procreate, two sessions",
+        "place": "Tashkeel Nad Al Sheba"
+      },
+      {
         "date": "2026",
-        "title": "Art of Elevation: 8 sessions of charcoal, soft pastel & watercolour",
+        "title": "Art of Elevation: eight sessions of charcoal, pastel and watercolour",
         "place": "Tashkeel × Sharjah Capability Development"
       },
       {
         "date": "2025",
-        "title": "Summer Camp workshops",
+        "title": "26 risograph workshops in one year",
         "place": "Tashkeel Makerspace, Alserkal Avenue"
       },
       {
-        "date": "2025",
-        "title": "Stencil lettering hoodie workshop",
-        "place": "Sikka Art & Design Festival"
+        "date": "2023",
+        "title": "Soft pastel workshop",
+        "place": "Museum of the Future, with Tashkeel"
       },
       {
-        "date": "May 2023",
+        "date": "2023",
         "title": "Realistic Portrait Drawing in Charcoal (sold out)",
         "place": "Al Safa Art & Design Library"
       },
@@ -111,19 +267,19 @@
         "place": "Tashkeel"
       }
     ],
-    "cta": "Ask about the next workshop or a private lesson"
+    "cta": "Ask about the next workshop"
   },
   "press": [
     {
       "quote": "It took about two hours to print. With experience, it becomes easier to deal with the printer. But still, there are always surprises.",
-      "source": "The National, on A Day in Dubai, August 2026",
+      "source": "The National, August 2026",
       "link": "https://www.thenationalnews.com/arts-culture/art-design/2026/08/05/group-exhibition-at-tashkeel-celebrates-charm-and-quirks-of-risograph/"
     }
   ],
   "exhibitions": [
     {
       "year": "2026",
-      "title": "Khali Balak Men RISO, group exhibition",
+      "title": "Khali Balak Men RISO",
       "place": "Tashkeel, Dubai"
     },
     {
@@ -135,19 +291,19 @@
   "guide": {
     "eyebrow": "Free guide",
     "title": "The Old Masters' Portrait Notes",
-    "text": "Five short lessons from my workshop table: proportion, the planes of the face, value, edges and the last highlight. Leave your email and I'll send it, along with a note when new workshops open.",
+    "text": "Five short lessons from my workshop table on proportion, planes, value, edges and the last highlight. Leave your email and I'll send it, with a note when new workshops open.",
     "button": "Send me the guide",
-    "success": "Thank you. Your guide is ready below, and I'll write when the next workshop opens.",
+    "success": "Thank you. Your guide is ready.",
     "downloadUrl": "guide.html",
     "formEndpoint": ""
   },
   "commission": {
     "title": "Commission a portrait",
-    "text": "Private portraits in charcoal, pastel or digital paint, from a photograph you love. Tell me who it's for, the size you have in mind and when you need it.",
+    "text": "Charcoal, pastel or digital paint, from a photograph you love. Tell me who it's for, the size you have in mind and when you need it.",
     "steps": [
       "Send a photo, the size and your deadline",
-      "I send a quote and a first sketch to approve",
-      "I finish the portrait and deliver it, ready to frame"
+      "Approve a quote and a first sketch",
+      "Receive the finished portrait, ready to frame"
     ]
   },
   "contact": {
