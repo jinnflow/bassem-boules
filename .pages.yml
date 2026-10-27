@@ -20,20 +20,17 @@ content:
         label: Name in Arabic
         type: string
       - name: tagline
-        label: Small line above the big title
+        label: Small line above the name
         type: string
-      - name: heroTitle
-        label: Big title on the first screen (new line = line break)
+      - name: heroLine
+        label: Sentence under the name
         type: text
-      - name: heroNote
-        label: Hint next to the light
-        type: string
+      - name: heroPhoto
+        label: My photo (first screen)
+        type: image
       - name: intro
         label: Short introduction
         type: text
-      - name: portrait
-        label: My photo
-        type: image
       - name: stats
         label: Numbers
         type: object
@@ -41,6 +38,26 @@ content:
         fields:
           - { name: value, label: Number, type: string }
           - { name: label, label: What it means, type: string }
+      - name: presentedWith
+        label: Presented with (TV, institutions)
+        type: string
+        list: true
+      - name: lamp
+        label: Lamp section (drawing lit by the cursor)
+        type: object
+        fields:
+          - { name: image, label: Drawing (dark, black-and-white works best), type: image }
+          - { name: label, label: Small caption, type: string }
+          - { name: title, label: Big title (new line = line break), type: text }
+          - { name: hint, label: Hint, type: string }
+      - name: skills
+        label: Mastered skills
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Skill, type: string }
+          - { name: text, label: Description, type: text }
+          - { name: image, label: Picture shown on hover, type: image }
       - name: categories
         label: Gallery filters (mediums)
         type: string
@@ -66,13 +83,19 @@ content:
           - { name: link, label: Link (shop page or Instagram post), type: string }
           - { name: story, label: The story behind it, type: text }
 
-      - name: detail
-        label: Big close-up between gallery and workshops
+      - name: services
+        label: Work with me (services)
         type: object
         fields:
-          - { name: image, label: Picture, type: image }
-          - { name: quote, label: Quote, type: string }
-          - { name: source, label: Under the quote, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - name: items
+            label: Services
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Service, type: string }
+              - { name: text, label: Description, type: text }
 
       - name: teaching
         label: Workshops & teaching
@@ -106,15 +129,6 @@ content:
           - { name: source, label: Who said it, type: string }
           - { name: link, label: Link to article, type: string }
 
-      - name: exhibitions
-        label: Exhibitions
-        type: object
-        list: true
-        fields:
-          - { name: year, label: Year, type: string }
-          - { name: title, label: Exhibition, type: string }
-          - { name: place, label: Where, type: string }
-
       - name: guide
         label: Free guide (email sign-up)
         type: object
@@ -127,20 +141,13 @@ content:
           - { name: downloadUrl, label: Link to the guide, type: string }
           - { name: formEndpoint, label: "Email service address (from Formspree, ask your helper)", type: string }
 
-      - name: commission
-        label: Commissions
+      - name: contact
+        label: Contact
         type: object
         fields:
           - { name: title, label: Title, type: string }
           - { name: text, label: Text, type: text }
-          - { name: steps, label: Steps, type: string, list: true }
-
-      - name: contact
-        label: Contact & links
-        type: object
-        fields:
           - { name: email, label: Email, type: string }
           - { name: instagram, label: Instagram link, type: string }
           - { name: instagramHandle, label: Instagram name, type: string }
-          - { name: shop, label: Shop link, type: string }
-          - { name: tashkeel, label: Tashkeel profile link, type: string }
+          - { name: formEndpoint, label: "Enquiry form address (from Formspree, ask your helper)", type: string }

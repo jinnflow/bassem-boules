@@ -1,23 +1,55 @@
 {
   "name": "Bassem Boules",
   "nameArabic": "باسم بولس",
-  "tagline": "Portrait artist · Dubai",
-  "heroTitle": "Portraits drawn\nout of the dark.",
-  "heroNote": "Move your light across the drawing",
-  "intro": "Egyptian artist and illustrator, trained in the Faculty of Fine Arts at Alexandria University and working in Dubai. I draw the way the Old Masters taught: slowly, from light and shadow, until a face starts looking back.",
-  "portrait": "assets/img/bassem.jpg",
+  "tagline": "Artist · Educator · Dubai",
+  "heroLine": "Fourteen years of drawing faces, light and the cities in between. Portraits, public art, risograph and digital painting, and more than 500 workshops taught.",
+  "heroPhoto": "assets/img/bassem.jpg",
+  "intro": "I'm an Egyptian artist, trained in the Faculty of Fine Arts at Alexandria University and based in Dubai. I draw the way the Old Masters taught: slowly, from light and shadow, until a face starts looking back. Then I teach it, to anyone willing to look a little longer.",
   "stats": [
+    {
+      "value": "14",
+      "label": "years working as an artist"
+    },
+    {
+      "value": "500+",
+      "label": "workshops led for children, adults and teams"
+    },
     {
       "value": "48.6K",
       "label": "people follow the process on Instagram"
+    }
+  ],
+  "presentedWith": [
+    "Dubai TV",
+    "Sharjah Art Foundation",
+    "Dubai Culture"
+  ],
+  "lamp": {
+    "image": "assets/works/charcoal-eye-i.jpg",
+    "label": "Eye Study I · charcoal on paper",
+    "title": "Portraits drawn\nout of the dark.",
+    "hint": "Move your light across the drawing"
+  },
+  "skills": [
+    {
+      "title": "Portrait drawing",
+      "text": "Charcoal, graphite and soft pastel, built from proportion, light and shadow in the tradition of the Old Masters.",
+      "image": "assets/works/charcoal-eye-ii.jpg"
     },
     {
-      "value": "26",
-      "label": "riso workshops led at Tashkeel in one year"
+      "title": "Risograph printing",
+      "text": "Layered colour printing by hand, one ink at a time, from posters to editions of up to five colours.",
+      "image": "assets/works/fairouz.jpg"
     },
     {
-      "value": "Since 2022",
-      "label": "teaching drawing and print at Tashkeel"
+      "title": "Digital art",
+      "text": "Painterly portraits and illustration in Procreate, with every brushstroke kept visible.",
+      "image": "assets/works/idris-elba.jpg"
+    },
+    {
+      "title": "Watercolour",
+      "text": "Light, transparent colour and loose washes, for painting and for teaching beginners to trust the water.",
+      "image": "assets/img/studio-painting.jpg"
     }
   ],
   "categories": [
@@ -84,8 +116,8 @@
       "image": "assets/works/between-the-past-and-future.jpg",
       "status": "Sold",
       "price": "",
-      "link": "https://shop.tashkeel.org/products/between-the-past-and-future-by-bassem-boules",
-      "story": "A woman in a red kandora and gold-trimmed burqa reaches for an old lantern while the Dubai skyline waits, half drawn, behind her. Made at Tashkeel."
+      "link": "",
+      "story": "A woman in a red kandora and gold-trimmed burqa reaches for an old lantern while the Dubai skyline waits, half drawn, behind her."
     },
     {
       "title": "Eye Study II",
@@ -120,8 +152,8 @@
       "image": "assets/works/fairouz.jpg",
       "status": "Available",
       "price": "From AED 790",
-      "link": "https://shop.tashkeel.org/products/fairouz-2026",
-      "story": "The singer drawn in thousands of engraved lines of riso blue, overprinted with Ibrahim Zaki's red Arabic lettering. Shown in Khali Balak Men RISO at Tashkeel."
+      "link": "",
+      "story": "The singer drawn in thousands of engraved lines of riso blue, overprinted with Ibrahim Zaki's red Arabic lettering. Shown in the group exhibition Khali Balak Men RISO, Dubai, 2026."
     },
     {
       "title": "Eye Study",
@@ -168,7 +200,7 @@
       "image": "assets/works/a-day-in-dubai.jpg",
       "status": "Available",
       "price": "AED 735",
-      "link": "https://shop.tashkeel.org/products/a-day-in-dubai-2026",
+      "link": "",
       "story": "The Museum of the Future, Dubai Frame, Burj Al Arab and Burj Khalifa in one afternoon. Each colour is a separate pass through the riso machine; the print took about two hours."
     },
     {
@@ -208,18 +240,43 @@
       "story": "Christ as the Alpha and the Omega, in the tradition of Coptic icon painting."
     }
   ],
-  "detail": {
-    "image": "assets/works/eye-study-2024.jpg",
-    "quote": "Each wrinkle and texture tells a story.",
-    "source": "Bassem, on his 2024 eye study"
+  "services": {
+    "title": "Work with me",
+    "text": "Commissions are not only portraits. Tell me what you have in mind.",
+    "items": [
+      {
+        "title": "Portrait commissions",
+        "text": "Charcoal, pastel or digital paint, from a photograph you love. For gifts, families and memorials."
+      },
+      {
+        "title": "Public art & murals",
+        "text": "Large-scale work for walls, lobbies, schools and public spaces, from sketch to finished wall."
+      },
+      {
+        "title": "Private instruction",
+        "text": "One-to-one lessons in drawing, portrait, watercolour and digital art, at your pace and level."
+      },
+      {
+        "title": "Mentorship",
+        "text": "Guidance for artists building a portfolio, a practice or a career in the arts."
+      },
+      {
+        "title": "Workshops for organisations",
+        "text": "Hands-on sessions for schools, companies, museums and events: portrait, riso, watercolour and Procreate."
+      },
+      {
+        "title": "Illustration & design",
+        "text": "Illustration, posters and print pieces for brands, books and cultural projects."
+      }
+    ]
   },
   "teaching": {
-    "title": "The workshop table",
-    "text": "I teach drawing, portraiture, pastel and risograph at Tashkeel in Dubai, for children, families and adults. The method is the same at every level: look longer, measure honestly, and let light and shadow do the work.",
+    "title": "More than 500 workshops",
+    "text": "I teach drawing, portraiture, watercolour, risograph and digital art to children, families, adults and teams. The method is the same at every level: look longer, measure honestly, and let light and shadow do the work.",
     "images": [
       {
         "src": "assets/img/studio-riso.jpg",
-        "caption": "Risograph printing at the Tashkeel Makerspace"
+        "caption": "Teaching risograph printing"
       },
       {
         "src": "assets/img/studio-elevation.jpg",
@@ -234,58 +291,46 @@
       {
         "date": "Oct 2026",
         "title": "Riso Poster Lab",
-        "place": "Tashkeel"
+        "place": "Dubai"
       },
       {
         "date": "Oct 2026",
         "title": "Digital portraits in Procreate, two sessions",
-        "place": "Tashkeel Nad Al Sheba"
+        "place": "Dubai"
       },
       {
         "date": "2026",
         "title": "Art of Elevation: eight sessions of charcoal, pastel and watercolour",
-        "place": "Tashkeel × Sharjah Capability Development"
+        "place": "With Sharjah Capability Development"
       },
       {
         "date": "2025",
         "title": "26 risograph workshops in one year",
-        "place": "Tashkeel Makerspace, Alserkal Avenue"
+        "place": "Alserkal Avenue, Dubai"
       },
       {
         "date": "2023",
         "title": "Soft pastel workshop",
-        "place": "Museum of the Future, with Tashkeel"
+        "place": "Museum of the Future, Dubai"
       },
       {
         "date": "2023",
         "title": "Realistic Portrait Drawing in Charcoal (sold out)",
-        "place": "Al Safa Art & Design Library"
+        "place": "Al Safa Art & Design Library, Dubai"
       },
       {
         "date": "2022",
         "title": "Drawing 101, a five-week course for ages 8–12",
-        "place": "Tashkeel"
+        "place": "Dubai"
       }
     ],
-    "cta": "Ask about the next workshop"
+    "cta": "Book a workshop or a private lesson"
   },
   "press": [
     {
       "quote": "It took about two hours to print. With experience, it becomes easier to deal with the printer. But still, there are always surprises.",
-      "source": "The National, August 2026",
-      "link": "https://www.thenationalnews.com/arts-culture/art-design/2026/08/05/group-exhibition-at-tashkeel-celebrates-charm-and-quirks-of-risograph/"
-    }
-  ],
-  "exhibitions": [
-    {
-      "year": "2026",
-      "title": "Khali Balak Men RISO",
-      "place": "Tashkeel, Dubai"
-    },
-    {
-      "year": "2024",
-      "title": "Made in Tashkeel",
-      "place": "Tashkeel, Dubai"
+      "source": "Bassem in The National, August 2026",
+      "link": ""
     }
   ],
   "guide": {
@@ -297,20 +342,12 @@
     "downloadUrl": "guide.html",
     "formEndpoint": ""
   },
-  "commission": {
-    "title": "Commission a portrait",
-    "text": "Charcoal, pastel or digital paint, from a photograph you love. Tell me who it's for, the size you have in mind and when you need it.",
-    "steps": [
-      "Send a photo, the size and your deadline",
-      "Approve a quote and a first sketch",
-      "Receive the finished portrait, ready to frame"
-    ]
-  },
   "contact": {
+    "title": "Start a project",
+    "text": "A portrait, a wall, a workshop or a lesson. Write a few lines about what you have in mind and I'll reply personally.",
     "email": "bassemboules23@gmail.com",
     "instagram": "https://www.instagram.com/bassem_paul_art/",
     "instagramHandle": "@bassem_paul_art",
-    "shop": "https://shop.tashkeel.org/collections/bassem-boules",
-    "tashkeel": "https://tashkeel.org/artists/bassem-boules"
+    "formEndpoint": ""
   }
 }

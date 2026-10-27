@@ -24,23 +24,42 @@
     document.querySelectorAll("[data-bind]").forEach(function (n) {
       var v = c[n.getAttribute("data-bind")]; if (v) n.textContent = v;
     });
-    if (c.heroTitle) {
-      var h = $("hero-title"); h.textContent = "";
-      c.heroTitle.split("\n").forEach(function (line, i) { if (i) h.appendChild(document.createElement("br")); h.appendChild(document.createTextNode(line)); });
-    }
+    setText("hero-line", c.heroLine);
+    if (c.heroPhoto) $("hero-photo").src = c.heroPhoto;
     setText("intro-text", c.intro);
     var stats = $("stats"); stats.textContent = "";
     (c.stats || []).forEach(function (s) {
       var d = el("div"); d.appendChild(el("dt", null, s.value)); d.appendChild(el("dd", null, s.label)); stats.appendChild(d);
     });
+    var pres = $("presented"); pres.textContent = "";
+    (c.presentedWith || []).forEach(function (name) { pres.appendChild(el("li", null, name)); });
+
+    var lp = c.lamp || {};
+    if (lp.image) { $("lamp-dim").src = lp.image; $("lamp-lit").src = lp.image; }
+    setText("lamp-label", lp.label); setText("lamp-hint", lp.hint);
+    if (lp.title) {
+      var h = $("lamp-title"); h.textContent = "";
+      lp.title.split("\n").forEach(function (line, i) { if (i) h.appendChild(document.createElement("br")); h.appendChild(document.createTextNode(line)); });
+    }
+
+    renderSkills(c.skills || []);
 
     renderFilters(c.categories || []);
     renderGrid();
 
-    if (c.detail) {
-      if (c.detail.image) $("detail-img").src = c.detail.image;
-      setText("detail-quote", c.detail.quote); setText("detail-source", c.detail.source);
-    }
+    var sv = c.services || {};
+    setText("services-title", sv.title); setText("services-text", sv.text);
+    var list = $("services-list"), sel = $("enq-type"); list.textContent = ""; sel.textContent = "";
+    (sv.items || []).forEach(function (it) {
+      var li = el("li", "service");
+      li.appendChild(el("h3", "service__title", it.title));
+      li.appendChild(el("p", "service__text", it.text));
+      var a = el("a", "textlink service__link", "Enquire"); a.href = "#contact";
+      a.addEventListener("click", function () { sel.value = it.title; });
+      li.appendChild(a); list.appendChild(li);
+      var o = el("option", null, it.title); o.value = it.title; sel.appendChild(o);
+    });
+    var other = el("option", null, "Something else"); other.value = "Something else"; sel.appendChild(other);
 
     var t = c.teaching || {};
     setText("studio-title", t.title); setText("studio-text", t.text); setText("studio-cta", t.cta);
@@ -71,14 +90,30 @@
     var g = c.guide || {};
     setText("guide-eyebrow", g.eyebrow); setText("guide-title", g.title); setText("guide-text", g.text); setText("guide-button", g.button);
 
-    var cm = c.commission || {};
-    setText("com-title", cm.title); setText("com-text", cm.text);
-    var steps = $("com-steps"); steps.textContent = "";
-    (cm.steps || []).forEach(function (s) { steps.appendChild(el("li", null, s)); });
-
     var ct = c.contact || {};
-    if (ct.email) { setText("email-text", ct.email); setHref("email-link", "mailto:" + ct.email + "?subject=" + encodeURIComponent("Portrait commission")); }
-    setHref("ig-link", ct.instagram); setHref("foot-shop", ct.shop); setHref("foot-tashkeel", ct.tashkeel);
+    setText("contact-title", ct.title); setText("contact-text", ct.text);
+    if (ct.email) { setText("email-text", ct.email); setHref("email-link", "mailto:" + ct.email + "?subject=" + encodeURIComponent("Project enquiry")); }
+    setHref("ig-link", ct.instagram);
+  }
+
+  /* ---------------- skills: hover a discipline to see it ---------------- */
+  var peek = $("peek"), peekImg = $("peek-img"), fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  function renderSkills(items) {
+    var ol = $("skills"); ol.textContent = "";
+    items.forEach(function (k) {
+      var li = el("li", "skill");
+      li.appendChild(el("span", "skill__title", k.title));
+      li.appendChild(el("p", "skill__text", k.text));
+      if (k.image) {
+        var th = el("img", "skill__thumb"); th.src = k.image; th.alt = k.title; th.loading = "lazy"; li.appendChild(th);
+        if (fine) {
+          li.addEventListener("pointerenter", function () { peekImg.src = k.image; peek.classList.add("is-on"); });
+          li.addEventListener("pointerleave", function () { peek.classList.remove("is-on"); });
+          li.addEventListener("pointermove", function (e) { peek.style.left = e.clientX + "px"; peek.style.top = e.clientY + "px"; });
+        }
+      }
+      ol.appendChild(li);
+    });
   }
 
   /* ---------------- gallery ---------------- */
@@ -136,9 +171,12 @@
     $("viewer-story").textContent = w.story || "";
     $("viewer-status").textContent = [w.status, w.price].filter(Boolean).join(" · ");
     var link = $("viewer-link");
+    link.removeAttribute("target");
     if (w.link) {
-      link.hidden = false; link.href = w.link;
-      link.textContent = /tashkeel/.test(w.link) ? (/sold/i.test(w.status || "") ? "See it at Tashkeel" : "Collect this print") : "Watch it being made";
+      link.hidden = false; link.href = w.link; link.target = "_blank"; link.rel = "noopener";
+      link.textContent = /\/reel\//.test(w.link) ? "Watch it being made" : "See it on Instagram";
+    } else if (/available/i.test(w.status || "")) {
+      link.hidden = false; link.href = "#contact"; link.textContent = "Enquire about this print";
     } else link.hidden = true;
   }
   function openViewer(i) { show(i); if (viewer.showModal) viewer.showModal(); else viewer.setAttribute("open", ""); }
@@ -147,6 +185,7 @@
     show(visible[(pos + d + visible.length) % visible.length]);
   }
   $("viewer-close").addEventListener("click", function () { viewer.close(); });
+  $("viewer-link").addEventListener("click", function () { if (this.getAttribute("href") === "#contact") viewer.close(); });
   $("viewer-prev").addEventListener("click", function () { step(-1); });
   $("viewer-next").addEventListener("click", function () { step(1); });
   viewer.addEventListener("keydown", function (e) {
@@ -211,17 +250,9 @@
     measure(); paint(base); start();
   })();
 
-  /* ---------------- header + parallax ---------------- */
-  var bar = $("bar"), detail = $("detail"), dImg = $("detail-img"), ticking = false;
-  function onScroll() {
-    ticking = false;
-    bar.classList.toggle("is-solid", window.scrollY > 40);
-    if (reduceMotion || !detail) return;
-    var r = detail.getBoundingClientRect();
-    if (r.bottom < 0 || r.top > window.innerHeight) return;
-    var p = (window.innerHeight - r.top) / (window.innerHeight + r.height); // 0 → 1 while passing
-    dImg.style.transform = "translate3d(0," + ((p - 0.5) * -14).toFixed(2) + "%,0) scale(" + (1.04 + p * 0.06).toFixed(3) + ")";
-  }
+  /* ---------------- header ---------------- */
+  var bar = $("bar"), ticking = false;
+  function onScroll() { ticking = false; bar.classList.toggle("is-solid", window.scrollY > 40); }
   window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
   onScroll();
 
@@ -247,6 +278,32 @@
       body: JSON.stringify({ name: name, email: email, source: "Portrait Notes guide" })
     }).then(function (r) { if (!r.ok) throw new Error(r.status); done(); })
       .catch(function () { btn.disabled = false; msg.classList.add("is-error"); msg.textContent = "That didn't go through. Check your connection and try again."; });
+  });
+
+  /* ---------------- project enquiry ---------------- */
+  $("enquiry").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var out = $("enq-msg-out"), email = $("enq-email").value.trim();
+    out.className = "form__msg";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      out.textContent = "Please enter an email address like name@example.com."; out.classList.add("is-error"); $("enq-email").focus(); return;
+    }
+    var ct = (content && content.contact) || {}, to = ct.email || "bassemboules23@gmail.com";
+    var data = { name: $("enq-name").value.trim(), email: email, interest: $("enq-type").value, message: $("enq-msg").value.trim() };
+    var btn = $("enq-button"); btn.disabled = true;
+    function fallback() {
+      // No form service connected: prepare the email so the visitor can send it themselves.
+      btn.disabled = false;
+      var body = data.message + "\n\n" + data.name + "\n" + data.email;
+      out.textContent = "Almost there: send it from your email app to " + to + ". ";
+      var a = el("a", null, "Open email");
+      a.href = "mailto:" + to + "?subject=" + encodeURIComponent(data.interest + " enquiry") + "&body=" + encodeURIComponent(body);
+      out.appendChild(a);
+    }
+    if (!ct.formEndpoint) { fallback(); return; }
+    fetch(ct.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); btn.disabled = false; $("enquiry").reset(); out.textContent = "Thank you. Bassem will reply to " + email + " personally."; })
+      .catch(fallback);
   });
 
   /* ---------------- copy email ---------------- */

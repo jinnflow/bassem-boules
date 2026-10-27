@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bassem Boules</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Bassem Boules is an Egyptian portrait artist in Dubai, drawing in charcoal, pastel and digital paint, and teaching at Tashkeel.">
-<meta property="og:title" content="Bassem Boules, portrait artist">
-<meta property="og:description" content="Portraits drawn out of the dark. Works, workshops, commissions and a free portrait guide.">
+<meta name="description" content="Bassem Boules is an Egyptian artist and educator in Dubai: portraits, public art, risograph, digital art and watercolour, with more than 500 workshops taught.">
+<meta property="og:title" content="Bassem Boules, artist and educator">
+<meta property="og:description" content="Portraits, public art, risograph and digital painting. Commissions, private lessons, mentorship and workshops in Dubai.">
 <meta property="og:image" content="assets/img/og.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="css/site.css">
-<link rel="preload" as="image" href="assets/works/charcoal-eye-i.jpg">
+<link rel="preload" as="image" href="assets/img/bassem.jpg">
 </head>
 <body>
 
@@ -25,34 +25,65 @@
   <a class="bar__name" href="#top">Bassem Boules</a>
   <nav class="bar__nav" aria-label="Sections">
     <a href="#work">Work</a>
-    <a href="#studio">Workshops</a>
-    <a href="#guide">Free guide</a>
-    <a href="#contact">Commission</a>
+    <a href="#services">Work with me</a>
+    <a href="#teaching">Workshops</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main id="top">
 
-  <!-- HERO: a lamp in a dark studio. The cursor is the light. -->
-  <section class="hero" id="hero" aria-label="Introduction">
-    <div class="hero__art" id="lamp">
-      <img class="hero__img hero__img--dim" src="assets/works/charcoal-eye-i.jpg" alt="" aria-hidden="true">
-      <img class="hero__img hero__img--lit" src="assets/works/charcoal-eye-i.jpg" alt="Eye Study I, a charcoal drawing by Bassem Boules">
-      <div class="hero__warm" aria-hidden="true"></div>
-      <div class="hero__fade" aria-hidden="true"></div>
-    </div>
+  <!-- HERO: the artist, by name -->
+  <section class="hero" aria-labelledby="hero-name">
+    <figure class="hero__photo">
+      <img id="hero-photo" src="assets/img/bassem.jpg" alt="Portrait of the artist Bassem Boules" width="1200" height="1200">
+    </figure>
     <div class="hero__text">
-      <p class="label" data-bind="tagline">Portrait artist · Dubai</p>
-      <h1 class="hero__title" id="hero-title">Portraits drawn<br>out of the dark.</h1>
+      <p class="label" data-bind="tagline">Artist · Educator · Dubai</p>
+      <h1 class="hero__name" id="hero-name"><span class="hero__first">Bassem</span><span class="hero__last">Boules</span></h1>
+      <p class="hero__ar" lang="ar" dir="rtl" data-bind="nameArabic">باسم بولس</p>
+      <p class="hero__line" id="hero-line"></p>
+      <div class="hero__actions">
+        <a class="btn" href="#work">See the work</a>
+        <a class="textlink" href="#services">Work with me</a>
+      </div>
     </div>
-    <p class="hero__hint label" aria-hidden="true"><span class="hero__dot"></span><span data-bind="heroNote">Move your light across the drawing</span></p>
   </section>
 
-  <!-- INTRO -->
+  <!-- INTRO + numbers + presented with -->
   <section class="intro wrap" aria-label="About">
-    <p class="intro__text" id="intro-text">Egyptian artist and illustrator, trained in the Faculty of Fine Arts at Alexandria University and working in Dubai.</p>
+    <p class="intro__text" id="intro-text"></p>
     <dl class="stats" id="stats"></dl>
+    <div class="presented">
+      <p class="label">Presented with</p>
+      <ul class="presented__list" id="presented"></ul>
+    </div>
   </section>
+
+  <!-- LAMP: a charcoal drawing in the dark; the cursor is the light -->
+  <section class="lamp" aria-labelledby="lamp-title">
+    <div class="lamp__art" id="lamp">
+      <img class="lamp__img lamp__img--dim" id="lamp-dim" src="assets/works/charcoal-eye-i.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img class="lamp__img lamp__img--lit" id="lamp-lit" src="assets/works/charcoal-eye-i.jpg" alt="Eye Study I, a charcoal drawing by Bassem Boules" loading="lazy">
+      <div class="lamp__warm" aria-hidden="true"></div>
+      <div class="lamp__fade" aria-hidden="true"></div>
+    </div>
+    <div class="lamp__text">
+      <p class="label" id="lamp-label">Eye Study I · charcoal on paper</p>
+      <h2 class="lamp__title" id="lamp-title">Portraits drawn<br>out of the dark.</h2>
+    </div>
+    <p class="lamp__hint label" aria-hidden="true"><span class="lamp__dot"></span><span id="lamp-hint">Move your light across the drawing</span></p>
+  </section>
+
+  <!-- SKILLS: hover a discipline to see it -->
+  <section class="skills wrap" aria-labelledby="skills-title">
+    <div class="sechead">
+      <p class="label">Mastered skills</p>
+      <h2 class="h2" id="skills-title">Four disciplines, one hand</h2>
+    </div>
+    <ol class="skills__list" id="skills"></ol>
+  </section>
+  <figure class="peek" id="peek" aria-hidden="true"><img id="peek-img" src="" alt=""></figure>
 
   <!-- WORK -->
   <section class="work wrap" id="work" aria-labelledby="work-title">
@@ -63,26 +94,29 @@
     <div class="grid" id="grid"></div>
   </section>
 
-  <!-- DETAIL: one study, very large -->
-  <section class="detail" id="detail" aria-label="Detail">
-    <img class="detail__img" id="detail-img" src="assets/works/eye-study-2024.jpg" alt="" loading="lazy">
-    <figure class="detail__quote wrap">
-      <blockquote id="detail-quote">Each wrinkle and texture tells a story.</blockquote>
-      <figcaption class="label" id="detail-source">Bassem, on his 2024 eye study</figcaption>
-    </figure>
+  <!-- SERVICES -->
+  <section class="services" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="sechead">
+        <p class="label">Commissions & teaching</p>
+        <h2 class="h2" id="services-title">Work with me</h2>
+        <p class="sechead__text" id="services-text"></p>
+      </div>
+      <ol class="services__list" id="services-list"></ol>
+    </div>
   </section>
 
-  <!-- STUDIO / TEACHING (the one light room in the house) -->
-  <section class="studio" id="studio" aria-labelledby="studio-title">
+  <!-- TEACHING (the one light room) -->
+  <section class="studio" id="teaching" aria-labelledby="studio-title">
     <div class="wrap studio__in">
       <div class="studio__head">
         <p class="label">Workshops</p>
-        <h2 class="h2" id="studio-title">The workshop table</h2>
+        <h2 class="h2" id="studio-title">More than 500 workshops</h2>
         <p class="studio__text" id="studio-text"></p>
       </div>
       <div class="studio__photos" id="studio-photos"></div>
       <ol class="sessions" id="sessions"></ol>
-      <a class="textlink" id="studio-cta" href="#contact">Ask about the next workshop</a>
+      <a class="textlink" id="studio-cta" href="#contact">Book a workshop or a private lesson</a>
     </div>
   </section>
 
@@ -116,16 +150,29 @@
     </div>
   </section>
 
-  <!-- COMMISSION -->
-  <section class="contact wrap" id="contact" aria-labelledby="com-title">
-    <p class="label">Commissions</p>
-    <h2 class="contact__title" id="com-title">Commission a portrait</h2>
-    <p class="contact__text" id="com-text"></p>
-    <ol class="steps" id="com-steps"></ol>
-    <div class="contact__mail">
-      <a class="contact__email" id="email-link" href="mailto:bassemboules23@gmail.com"><span id="email-text">bassemboules23@gmail.com</span></a>
-      <button class="copy label" id="copy-email" type="button">Copy</button>
+  <!-- CONTACT / ENQUIRY -->
+  <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+    <div class="contact__head">
+      <p class="label">Contact</p>
+      <h2 class="contact__title" id="contact-title">Start a project</h2>
+      <p class="contact__text" id="contact-text"></p>
+      <div class="contact__mail">
+        <a class="contact__email" id="email-link" href="mailto:bassemboules23@gmail.com"><span id="email-text">bassemboules23@gmail.com</span></a>
+        <button class="copy label" id="copy-email" type="button">Copy</button>
+      </div>
     </div>
+    <form class="form enquiry" id="enquiry" novalidate>
+      <label class="field" for="enq-name"><span class="label">Name</span>
+        <input id="enq-name" name="name" type="text" autocomplete="name" placeholder="Your name"></label>
+      <label class="field" for="enq-email"><span class="label">Email</span>
+        <input id="enq-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+      <label class="field" for="enq-type"><span class="label">I'm interested in</span>
+        <select id="enq-type" name="type"></select></label>
+      <label class="field" for="enq-msg"><span class="label">A few lines about it</span>
+        <textarea id="enq-msg" name="message" rows="3" placeholder="Who it's for, size or group, dates…"></textarea></label>
+      <button class="btn" id="enq-button" type="submit">Send enquiry</button>
+      <p class="form__msg" id="enq-msg-out" role="status" aria-live="polite"></p>
+    </form>
   </section>
 </main>
 
@@ -133,8 +180,8 @@
   <p class="foot__name">Bassem Boules <span lang="ar" dir="rtl" class="foot__ar" data-bind="nameArabic">باسم بولس</span></p>
   <p class="foot__links label">
     <a id="ig-link" href="https://www.instagram.com/bassem_paul_art/" target="_blank" rel="noopener">Instagram</a>
-    <a id="foot-shop" href="https://shop.tashkeel.org/collections/bassem-boules" target="_blank" rel="noopener">Prints at Tashkeel</a>
-    <a id="foot-tashkeel" href="https://tashkeel.org/artists/bassem-boules" target="_blank" rel="noopener">Tashkeel profile</a>
+    <a href="#guide">Free guide</a>
+    <a href="#contact">Contact</a>
   </p>
   <p class="foot__meta label">Dubai · Artworks © Bassem Boules</p>
 </footer>
@@ -151,7 +198,7 @@
     <h3 class="viewer__title" id="viewer-title"></h3>
     <p class="label" id="viewer-meta"></p>
     <p class="viewer__story" id="viewer-story"></p>
-    <p class="viewer__actions"><span class="label" id="viewer-status"></span> <a class="textlink" id="viewer-link" href="#" target="_blank" rel="noopener">See the post</a></p>
+    <p class="viewer__actions"><span class="label" id="viewer-status"></span> <a class="textlink" id="viewer-link" href="#">See the post</a></p>
   </div>
 </dialog>
 
